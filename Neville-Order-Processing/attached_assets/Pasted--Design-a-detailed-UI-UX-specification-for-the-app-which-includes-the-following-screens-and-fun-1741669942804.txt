@@ -1,0 +1,124 @@
+
+
+ Design a detailed UI/UX specification for the app, which includes the following screens and functionalities: 
+
+ 1. *Splash Screen:* 
+
+    - Center the app logo on the screen. 
+
+    - Display for approximately 3 seconds before transitioning to the Login page. 
+
+ 2. *Login Page:* 
+
+    - Include text fields for username and password with: 
+
+      - Clean look, no visible borders, only a thin light gray (#D3D3D3) bottom border. 
+
+      - A secure entry button for the password field to reveal the password. 
+
+    - Add "Remember Me" text with a rounded rectangle dark gray checkbox next to it. 
+
+    - Position the "Forgot Password" button to the right of the checkbox. 
+
+    - Include a "Login" button below the "Forgot Password" button that: 
+
+      - Validates user credentials. 
+
+      - Displays relevant error messages for incorrect credentials. 
+
+      - Redirects to the Dashboard upon successful login. 
+
+    - Tapping the "Forgot Password" button should navigate to the Forgot Password page. 
+
+ 3. *Forgot Password Page:* 
+
+    - Include a text field for email entry with: 
+
+      - No visible border, just a light gray (#D3D3D3) bottom border. 
+
+    - Position a "Submit" button below the text field that: 
+
+      - Validates the email address. 
+
+      - Displays error messages for invalid/missing emails. 
+
+      - Redirects back to the Login Page upon successful email submission. 
+
+ 4. *Dashboard Page:* 
+
+    - Feature buttons for the Product Module and Order Module, styled with: 
+
+      - Background color #0760f0. 
+
+      - White (#ffffff) bold text. 
+
+      - Centered layout. 
+
+ 5. *Product List Screen:* 
+
+    - Display a paginated list of products (20 products at a time). 
+
+    - Implement automatic loading of the next 20 products upon scrolling to the 20th product. 
+
+    - Each row item create and display the following fields : 
+
+      - Product Name 
+
+      - Product Code 
+
+    - Include a search bar for product name search. 
+
+- bottom of the screen create fab button at rights side bottom corner , if user click the fab button navigate to the Add Product Page .
+
+- user click the product list item navigate to the Edit Product Page screen with load the user clicked item value also.
+
+
+ 6. *Add/Edit Product Page:* 
+
+    - Display detailed product information with: 
+
+      - Input fields for Product Name, Product Code, and Product Description. 
+
+      - Rounded rectangular light gray (#D3D3D3) borders for input fields. 
+
+      - Left-aligned placeholder text. 
+
+    - A "Save" button to confirm changes: 
+
+      - Validate Product Name, Code, and Description. 
+
+      - Display error messages for any issues. 
+
+      - Save or update product details in the SQLite database upon successful validation, and redirect back to the Product List page. 
+
+ 7. *Order Module:* 
+
+    - Display a list of orders from the local SQLite database, loading 20 orders at a time. 
+
+    - Implement automatic loading of the next 20 orders upon scrolling to the 20th order. 
+
+    - Each row item create and display the following fields: 
+
+      - Order Number 
+
+      - Order Date 
+
+      - Ordered By 
+
+      - Order Status 
+
+     -- Display two buttons namely "Accept" and "Reject" at the bottom of the page 
+
+
+8. *Order Details page Actions:* 
+
+    - *Accept Button:* Updates "Preferred Delivery Date" to the "Next Available Date" and save the order by changing the order status to "Confirmed". 
+
+    - *Reject Button:* Changes order status to "Cancelled" and saves updates. 
+
+
+ Throughout the design, ensure adherence to UI design and user experience best practices. 
+
+ *Development Order:* 
+
+ - Complete each feature sequentially. After the completion of one feature, proceed to the next feature as outlined above.
